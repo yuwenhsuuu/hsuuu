@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    padding: 10px;
+    background: white;
+}
+
+/* Header/Blog Title */
+.header {
+    padding: 30px;
+    text-align: center;
+    background:#FFFF33;
+}
+
+.header h1 {
+    font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color:   #00DD77;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+    float: left;
+    width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+    float: left;
+    width: 25%;
+    background-color: white;
+    padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+    background-color: white;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+    background-color:#FFFF33;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background:   #00DD77;
+    margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+        width: 100%;
+        padding: 0;
+        background-color: white;
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1 style="color: #00DD77;">Hsu's Website</h1>
+  <p style="color:  #00DD77;">Welcome to my website !</p>
+</div>
+
+<div class="topnav">
+  <a href="https://www.facebook.com/ai.s.shuai.7">Facebook</a>
+  
+  
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2 style="color:black;">My favorite animal : Cat</h2>
+      <h5 style="color:black;">Oct 27, 2018</h5>
+      <img src="https://blog-imgs-122.fc2.com/k/a/g/kagonekoshiro/f18102810.jpg"style="width:540px;height:360px;">
+      <p> <font size="1">(photo from:https://blog-imgs-122.fc2.com/k/a/g/kagonekoshiro/f18102810.jpg)</font> </p>
+
+    </div>
+    <div class="card">
+      <h2 style="color:black;">My hobby : Typography</h2>
+      <h5 style="color:black;">Oct 28, 2018</h5>
+      <img src="https://storage.googleapis.com/spec-host-backup/mio-design%2Fassets%2F0BzCQdutE8gumVE9NYmg5cU83N2s%2Fanatomy.png"style="width:540px;height:270px;">
+      <P> <font size="1">(photo from:https://storage.googleapis.com/spec-host-backup/mio-design%2Fassets%2F0BzCQdutE8gumVE9NYmg5cU83N2s%2Fanatomy.png)</font></P>
+      <p style="color:black;"><b>Typography is the art and technique of arranging type to make written language legible, readable, and appealing when displayed.</b></p>
+      
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2 style="color:black;">About Me</h2>
+     <img src="https://scontent.ftpe7-3.fna.fbcdn.net/v/t1.0-1/p240x240/38935475_1918634054823408_341611227593572352_n.jpg?_nc_cat=108&oh=e2e0e02e59aeef39c4d91a783342045b&oe=5C52EDB4"style="width:140px;height:140px;">
+     
+		<p style="color:black;">Yu-Wen Hsu</p>
+        <p style="color:black;">NCCU MIS</p>
+		
+
+
+    </div>
+    <div class="card">
+      <h3 style="color:black;">Popular Post</h3>
+      <div class="fakeimg"></div>
+      <div class="fakeimg"></div>
+      <div class="fakeimg"></div>
+    </div>
+    <div class="card">
+      <h3 style="color:black;">Follow Me</h3>
+      
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2 style="color:white;">Thanks for your visiting !</h2>
+</div>
+
+</body>
+</html>
